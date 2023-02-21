@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_coffee_ui/widgets/my_bottom_sheet.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 
 class DetailsPage extends StatefulWidget {
@@ -215,7 +216,7 @@ class _DetailsPageState extends State<DetailsPage> {
                         child: InkWell(
                           onTap: () {
                             showModalBottomSheet(
-                              backgroundColor: Colors.red,
+                              backgroundColor: Colors.white,
                               shape: const RoundedRectangleBorder(
                                 borderRadius: BorderRadius.vertical(
                                   top: Radius.circular(25.0),
@@ -223,9 +224,7 @@ class _DetailsPageState extends State<DetailsPage> {
                               ),
                               context: context,
                               builder: (context) {
-                                return Container(
-                                  height: 900,
-                                );
+                                return const MyBottomSheet();
                               },
                             );
                           },
@@ -256,7 +255,7 @@ class _DetailsPageState extends State<DetailsPage> {
               ),
               Positioned(
                 left: 75.0,
-                top: MediaQuery.of(context).size.height / 7,
+                top: 150,
                 child: Container(
                   height: 400.0,
                   width: 400.0,
