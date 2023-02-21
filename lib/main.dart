@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Coffee UI',
       home: MyHomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
