@@ -193,7 +193,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Stack(
               children: [
-                Container(height: 330.0),
+                Container(height: 340.0),
                 Positioned(
                   top: 75,
                   child: Container(

@@ -254,14 +254,14 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),
               ),
               Positioned(
-                left: 75.0,
-                top: 150,
+                left: 130,
+                top: MediaQuery.of(context).size.height / 6,
                 child: Container(
                   height: 400.0,
                   width: 400.0,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                    image: AssetImage('assets/pinkcup.png'),
+                    image: AssetImage('assets/twocup.png'),
                     fit: BoxFit.cover,
                   )),
                 ),
